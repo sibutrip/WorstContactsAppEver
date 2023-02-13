@@ -1,0 +1,87 @@
+//
+//  Contact.swift
+//  AccessibilityAndLocalization
+//
+//  Created by Cory Tripathy on 2/8/23.
+//
+
+import Foundation
+
+struct Contact: Identifiable, Hashable {
+    let id = UUID()
+    let firstName: String
+    let lastName: String
+    var fullName: String {
+        self.firstName + self.lastName
+    }
+    var dateLastContacted = String()
+    
+    var isFavorited = false
+    
+    init(firstName: String, lastName: String, isFavorited: Bool? = nil) {
+        self.firstName = firstName
+        self.lastName = lastName
+        if let isFavorited {
+            self.isFavorited = isFavorited
+        }
+        dateLastContacted = createDate()
+    }
+    
+    func createDate() -> String {
+        /// create a random date from within the last 24 hours
+        let randomTimeInterval = (Int.random(in: 1...1440) * -1) * 60
+        let randomDate = Date().addingTimeInterval(TimeInterval(randomTimeInterval))
+        let calendar = Calendar.current
+        
+        /// format the date to a string
+        let year = calendar.component(.year, from: randomDate)
+        let month = calendar.component(.month, from: randomDate)
+        
+        let day = calendar.component(.day, from: randomDate)
+        let hour = calendar.component(.hour, from: randomDate) % 12
+        let amOrPm = {
+            if calendar.component(.hour, from: randomDate) <= 12 {
+                return "AM"
+            } else {
+                return "PM"
+            }
+        }()
+        
+        let minute = calendar.component(.minute, from: randomDate)
+        let formattedTime = "\(month)/\(day)/\(year) at \(hour):\(minute) \(amOrPm)"
+        return formattedTime
+    }
+    
+    static let contacts: [Contact] = [
+        .init(firstName: "Tyler", lastName: "Lawrence"),
+        .init(firstName: "Tom", lastName: "Phillips"),
+        .init(firstName: "Zoe", lastName: "Cutler"),
+        .init(firstName: "Kevin", lastName: "Marion"),
+        .init(firstName: "Cory", lastName: "Tripathy"),
+        .init(firstName: "Voe", lastName: "Morrell"),
+        .init(firstName: "Marcus", lastName: "Westbrooks"),
+        .init(firstName: "Tariq", lastName: "Williams"),
+        .init(firstName: "Jackson", lastName: "Williams"),
+        .init(firstName: "Anny", lastName: "Staten"),
+        .init(firstName: "Alesha", lastName: "Duncan"),
+        .init(firstName: "Alexia", lastName: "Henderson"),
+        .init(firstName: "Telayne", lastName: "Keith"),
+        .init(firstName: "Arlaya", lastName: "Worthen"),
+        .init(firstName: "Sarah", lastName: "Gretter"),
+        .init(firstName: "Hilary", lastName: "Srere"),
+        .init(firstName: "Christine", lastName: "Yarzabek"),
+        .init(firstName: "Joel", lastName: "Davies"),
+        .init(firstName: "Shonda", lastName: "Jones"),
+        .init(firstName: "Lilyan", lastName: "Talia"),
+        .init(firstName: "Raven", lastName: "Scott"),
+        .init(firstName: "Rhiannon", lastName: "Pleins", isFavorited: true),
+        .init(firstName: "Mike", lastName: "Goggins", isFavorited: true),
+        .init(firstName: "Theo", lastName: "Caldwell")
+    ]
+}
+
+extension Contact: Comparable {
+    static func < (lhs: Contact, rhs: Contact) -> Bool {
+        lhs.firstName < rhs.firstName
+    }
+}
