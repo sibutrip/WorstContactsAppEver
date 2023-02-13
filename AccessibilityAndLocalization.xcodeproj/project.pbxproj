@@ -14,7 +14,6 @@
 		74ACBC7A2992FEB700301804 /* ContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACBC792992FEB700301804 /* ContactCardView.swift */; };
 		74C8501529941EB50014893F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8501429941EB50014893F /* Contact.swift */; };
 		74C8501D2995318A0014893F /* ContactsViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8501C2995318A0014893F /* ContactsViewStyle.swift */; };
-		74C8501F299536590014893F /* ListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8501E299536590014893F /* ListTest.swift */; };
 		74C850252995596C0014893F /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C850242995596C0014893F /* ContactsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		74ACBC792992FEB700301804 /* ContactCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardView.swift; sourceTree = "<group>"; };
 		74C8501429941EB50014893F /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		74C8501C2995318A0014893F /* ContactsViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewStyle.swift; sourceTree = "<group>"; };
-		74C8501E299536590014893F /* ListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTest.swift; sourceTree = "<group>"; };
 		74C850242995596C0014893F /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +61,6 @@
 			children = (
 				748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */,
 				748DEE30298C3EE5009E42FF /* ContentView.swift */,
-				74C8501E299536590014893F /* ListTest.swift */,
 				74C8501429941EB50014893F /* Contact.swift */,
 				74C8501C2995318A0014893F /* ContactsViewStyle.swift */,
 				74ACBC792992FEB700301804 /* ContactCardView.swift */,
@@ -156,7 +153,6 @@
 				74C8501529941EB50014893F /* Contact.swift in Sources */,
 				748DEE31298C3EE5009E42FF /* ContentView.swift in Sources */,
 				74ACBC7A2992FEB700301804 /* ContactCardView.swift in Sources */,
-				74C8501F299536590014893F /* ListTest.swift in Sources */,
 				748DEE2F298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift in Sources */,
 				74C850252995596C0014893F /* ContactsView.swift in Sources */,
 			);
