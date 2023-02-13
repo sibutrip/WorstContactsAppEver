@@ -10,6 +10,7 @@ import SwiftUI
 struct ContactCardView: View {
     
     @Environment(\.dismiss) var dismiss: DismissAction
+    @Environment(\.accessibilityReduceMotion) var reduceMotion
     
     @Binding var contact: Contact
     @State var rotationAmount: Double = 0
@@ -51,7 +52,7 @@ struct ContactCardView: View {
                         .frame(width: 15, height: 15)
                 }
             }
-            .rotationEffect(Angle(degrees: rotationAmount))
+            .rotationEffect(Angle(degrees: reduceMotion ? 0 : rotationAmount))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
                 LinearGradient(colors: [.indigo,.purple], startPoint: .bottomLeading, endPoint: .topTrailing)

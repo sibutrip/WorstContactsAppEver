@@ -23,7 +23,6 @@ struct ContactsView: View {
         }
     }
     #warning("add photos for smart invert")
-    #warning("add delete")
     var body: some View {
         NavigationView {
             List(searchResults, id: \.self) { contact in

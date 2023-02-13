@@ -12,8 +12,8 @@ struct AccessibilityAndLocalizationApp: App {
     @State var contacts = Contact.contacts
     var body: some Scene {
         WindowGroup {
-//            ContentView(contacts: Contact.contacts.sorted())
-            ContactsView(contacts: $contacts, style: .normal)
+            ContentView(contacts: Contact.contacts.sorted())
+//            ContactsView(contacts: $contacts, style: .normal)
         }
     }
 }
