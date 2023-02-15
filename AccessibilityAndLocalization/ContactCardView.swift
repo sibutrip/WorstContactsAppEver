@@ -13,19 +13,28 @@ struct ContactCardView: View {
     @Environment(\.accessibilityReduceMotion) var reduceMotion
     
     @Binding var contact: Contact
-    @State var rotationAmount: Double = 0
+    @State var zoomScale: CGFloat  = 1.5
     
     var body: some View {
         NavigationView {
             VStack {
-                Text(String(contact.firstName.first ?? Character("")) + String(contact.lastName.first ?? Character("")))
-                    .foregroundColor(.black)
-                    .font(.system(size: 20))
-                    .padding()
-                    .background {
-                        Circle()
-                            .foregroundColor(.gray)
-                    }
+                if let image = UIImage(named: contact.firstName) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                        .offset(x: 0, y: 10)
+                        .clipShape(Circle())
+                        .frame(width: 100, height: 100)
+                } else {
+                    Text(String(contact.firstName.first ?? Character("")) + String(contact.lastName.first ?? Character("")))
+                        .foregroundColor(.black)
+                        .font(.system(size: 20))
+                        .padding()
+                        .background {
+                            Circle()
+                                .foregroundColor(.gray)
+                        }
+                }
                 Text("\(contact.firstName) \(contact.lastName)")
                     .foregroundColor(.black)
                     .font(.system(size: 36))
@@ -40,19 +49,22 @@ struct ContactCardView: View {
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
                 withAnimation {
-                    rotationAmount += 360
+                    zoomScale = 1
                 }
             }
             .toolbar {
                 Button {
                 dismiss()
                 } label: {
-                    Image(systemName: "x.circle")
+                    Image(systemName: "xmark")
                         .resizable()
-                        .frame(width: 15, height: 15)
+                        .frame(width: 10, height: 10)
                 }
             }
-            .rotationEffect(Angle(degrees: reduceMotion ? 0 : rotationAmount))
+            .scaleEffect(zoomScale, anchor: .center)
+            .animation(.interpolatingSpring(mass: 10, stiffness: 100, damping: 50, initialVelocity: 10), value: zoomScale)
+            
+//            .animation(.spring(response: 1, dampingFraction: 1.0, blendDuration: 1), value: zoomScale)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
                 LinearGradient(colors: [.indigo,.purple], startPoint: .bottomLeading, endPoint: .topTrailing)
@@ -63,7 +75,7 @@ struct ContactCardView: View {
 }
 
 struct ContactCardDummy: View {
-    @State var contact = Contact(firstName: "Jackson", lastName: "Williams")
+    @State var contact = Contact(firstName: "Cory", lastName: "Tripathy")
     var body: some View {
         ContactCardView(contact: $contact)
     }

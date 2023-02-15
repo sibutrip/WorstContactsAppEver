@@ -27,7 +27,7 @@ struct Contact: Identifiable, Hashable {
         dateLastContacted = createDate()
     }
     
-    func createDate() -> String {
+    private func createDate() -> String {
         /// create a random date from within the last 24 hours
         let randomTimeInterval = (Int.random(in: 1...1440) * -1) * 60
         let randomDate = Date().addingTimeInterval(TimeInterval(randomTimeInterval))
@@ -38,9 +38,10 @@ struct Contact: Identifiable, Hashable {
         let month = calendar.component(.month, from: randomDate)
         
         let day = calendar.component(.day, from: randomDate)
-        let hour = calendar.component(.hour, from: randomDate) % 12
+        var hour = calendar.component(.hour, from: randomDate) % 12
+        if hour == 0 { hour = 12 }
         let amOrPm = {
-            if calendar.component(.hour, from: randomDate) <= 12 {
+            if calendar.component(.hour, from: randomDate) < 12 {
                 return "AM"
             } else {
                 return "PM"
@@ -52,8 +53,8 @@ struct Contact: Identifiable, Hashable {
         return formattedTime
     }
     
-    static let contacts: [Contact] = [
-        .init(firstName: "Tyler", lastName: "Lawrence"),
+    public static let contacts: [Contact] = [
+        .init(firstName: "Ty", lastName: "Lawrence"),
         .init(firstName: "Tom", lastName: "Phillips"),
         .init(firstName: "Zoe", lastName: "Cutler"),
         .init(firstName: "Kevin", lastName: "Marion"),
@@ -74,7 +75,7 @@ struct Contact: Identifiable, Hashable {
         .init(firstName: "Shonda", lastName: "Jones"),
         .init(firstName: "Lilyan", lastName: "Talia"),
         .init(firstName: "Raven", lastName: "Scott"),
-        .init(firstName: "Rhiannon", lastName: "Pleins", isFavorited: true),
+        .init(firstName: "Rhi", lastName: "Pleins", isFavorited: true),
         .init(firstName: "Mike", lastName: "Goggins", isFavorited: true),
         .init(firstName: "Theo", lastName: "Caldwell")
     ]

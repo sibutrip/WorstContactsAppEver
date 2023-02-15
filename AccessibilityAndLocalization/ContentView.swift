@@ -2,39 +2,69 @@
 //  ContentView.swift
 //  AccessibilityAndLocalization
 //
-//  Created by Cory Tripathy on 2/2/23.
+//  Created by Cory Tripathy on 2/9/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    @State var contacts: [Contact]
-    @State var favoritedContacts: [Contact]
-    
-    init(contacts: [Contact]) {
-        self.contacts = contacts
-        favoritedContacts = contacts.filter {
-            $0.isFavorited
+    @State var contacts = Contact.contacts.sorted()
+    @State var isShowingContactCard = false
+    @State var selectedContact: Contact = Contact.contacts[0]
+    @State var searchText = String()
+    var searchResults: [Contact] {
+        if searchText.isEmpty {
+            return contacts
+        } else {
+            return contacts.filter {
+                $0.fullName.contains(searchText)
+            }
         }
     }
     var body: some View {
-        TabView {
-            ContactsView(contacts: $contacts, style: .normal)
-                .tabItem {
-                    Image(systemName: "person.3.sequence.fill")
+        NavigationView {
+            List(searchResults, id: \.self) { contact in
+                Button {
+                    self.selectedContact = contact
+                    isShowingContactCard = true
+                } label: {
+                    HStack(spacing: 5) {
+                        Text(contact.firstName)
+                            .font(.system(size: 18, weight: .bold, design: .default))
+                        Text(contact.lastName)
+                            .font(.system(size: 18, weight: .regular, design: .default))
+                    }
+                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                        Button(role: .destructive) {
+                            contacts.removeAll {
+                                $0 == contact
+                            }
+                        } label: {
+                            Image(systemName: "trash")
+                        }
+                    }
                 }
-            ContactsView(contacts: $favoritedContacts, style: .favorites)
-                .tabItem {
-                    Image(systemName: "star.fill")
-
-                }
+                .listRowBackground(Color.clear)
+            }
+            .scrollContentBackground(.hidden)
+            .frame(maxWidth: .infinity)
+            .sheet(isPresented: $isShowingContactCard) {
+                ContactCardView(contact: $selectedContact)
+            }
+            .navigationTitle("Contacts")
+            .toolbarBackground(Material.ultraThin, for: .navigationBar)
+            .toolbarBackground(Material.ultraThin, for: .tabBar)
+            .searchable(text: $searchText)
+            .background {
+                LinearGradient(colors: [.blue,.indigo], startPoint: .bottomLeading, endPoint: .topTrailing)
+                    .ignoresSafeArea()
+            }
         }
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct ContactsViewList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(contacts: Contact.contacts.sorted())
+        ContentView()
     }
 }

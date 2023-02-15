@@ -8,25 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		748DEE2F298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */; };
-		748DEE31298C3EE5009E42FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DEE30298C3EE5009E42FF /* ContentView.swift */; };
 		748DEE33298C3EE6009E42FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748DEE32298C3EE6009E42FF /* Assets.xcassets */; };
 		748DEE36298C3EE6009E42FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748DEE35298C3EE6009E42FF /* Preview Assets.xcassets */; };
 		74ACBC7A2992FEB700301804 /* ContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACBC792992FEB700301804 /* ContactCardView.swift */; };
 		74C8501529941EB50014893F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8501429941EB50014893F /* Contact.swift */; };
-		74C8501D2995318A0014893F /* ContactsViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8501C2995318A0014893F /* ContactsViewStyle.swift */; };
-		74C850252995596C0014893F /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C850242995596C0014893F /* ContactsView.swift */; };
+		74C850252995596C0014893F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C850242995596C0014893F /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		748DEE2B298C3EE5009E42FF /* AccessibilityAndLocalization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityAndLocalization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityAndLocalizationApp.swift; sourceTree = "<group>"; };
-		748DEE30298C3EE5009E42FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		748DEE32298C3EE6009E42FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		748DEE35298C3EE6009E42FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74ACBC792992FEB700301804 /* ContactCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardView.swift; sourceTree = "<group>"; };
 		74C8501429941EB50014893F /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		74C8501C2995318A0014893F /* ContactsViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewStyle.swift; sourceTree = "<group>"; };
-		74C850242995596C0014893F /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		74C850242995596C0014893F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */,
-				748DEE30298C3EE5009E42FF /* ContentView.swift */,
 				74C8501429941EB50014893F /* Contact.swift */,
-				74C8501C2995318A0014893F /* ContactsViewStyle.swift */,
 				74ACBC792992FEB700301804 /* ContactCardView.swift */,
-				74C850242995596C0014893F /* ContactsView.swift */,
+				74C850242995596C0014893F /* ContentView.swift */,
 				748DEE32298C3EE6009E42FF /* Assets.xcassets */,
 				748DEE34298C3EE6009E42FF /* Preview Content */,
 			);
@@ -149,12 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C8501D2995318A0014893F /* ContactsViewStyle.swift in Sources */,
 				74C8501529941EB50014893F /* Contact.swift in Sources */,
-				748DEE31298C3EE5009E42FF /* ContentView.swift in Sources */,
 				74ACBC7A2992FEB700301804 /* ContactCardView.swift in Sources */,
 				748DEE2F298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift in Sources */,
-				74C850252995596C0014893F /* ContactsView.swift in Sources */,
+				74C850252995596C0014893F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +283,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +313,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
