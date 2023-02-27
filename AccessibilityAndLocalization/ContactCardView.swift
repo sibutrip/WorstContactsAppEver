@@ -10,7 +10,6 @@ import SwiftUI
 struct ContactCardView: View {
     
     @Environment(\.dismiss) var dismiss: DismissAction
-    @Environment(\.accessibilityReduceMotion) var reduceMotion
     
     @Binding var contact: Contact
     @State var zoomScale: CGFloat  = 1.5
@@ -62,9 +61,7 @@ struct ContactCardView: View {
                 }
             }
             .scaleEffect(zoomScale, anchor: .center)
-            .animation(.interpolatingSpring(mass: 10, stiffness: 100, damping: 50, initialVelocity: 10), value: zoomScale)
-            
-//            .animation(.spring(response: 1, dampingFraction: 1.0, blendDuration: 1), value: zoomScale)
+            .animation(.interpolatingSpring(mass: 5, stiffness: 200, damping: 75, initialVelocity: 23), value: zoomScale)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
                 LinearGradient(colors: [.indigo,.purple], startPoint: .bottomLeading, endPoint: .topTrailing)

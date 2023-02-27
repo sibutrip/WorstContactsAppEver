@@ -8,6 +8,8 @@
 import Foundation
 
 struct Contact: Identifiable, Hashable {
+    
+    // MARK: - Properties
     let id = UUID()
     let firstName: String
     let lastName: String
@@ -16,17 +18,14 @@ struct Contact: Identifiable, Hashable {
     }
     var dateLastContacted = String()
     
-    var isFavorited = false
-    
-    init(firstName: String, lastName: String, isFavorited: Bool? = nil) {
+    // MARK: - Initializer
+    init(firstName: String, lastName: String) {
         self.firstName = firstName
         self.lastName = lastName
-        if let isFavorited {
-            self.isFavorited = isFavorited
-        }
         dateLastContacted = createDate()
     }
     
+    // MARK: - Properties
     private func createDate() -> String {
         /// create a random date from within the last 24 hours
         let randomTimeInterval = (Int.random(in: 1...1440) * -1) * 60
@@ -75,8 +74,8 @@ struct Contact: Identifiable, Hashable {
         .init(firstName: "Shonda", lastName: "Jones"),
         .init(firstName: "Lilyan", lastName: "Talia"),
         .init(firstName: "Raven", lastName: "Scott"),
-        .init(firstName: "Rhi", lastName: "Pleins", isFavorited: true),
-        .init(firstName: "Mike", lastName: "Goggins", isFavorited: true),
+        .init(firstName: "Rhi", lastName: "Pleins"),
+        .init(firstName: "Mike", lastName: "Goggins"),
         .init(firstName: "Theo", lastName: "Caldwell")
     ]
 }

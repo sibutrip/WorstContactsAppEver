@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var contacts = Contact.contacts.sorted()
     @State var isShowingContactCard = false
     @State var selectedContact: Contact = Contact.contacts[0]
+    
     @State var searchText = String()
     var searchResults: [Contact] {
         if searchText.isEmpty {
@@ -21,6 +22,7 @@ struct ContentView: View {
             }
         }
     }
+    
     var body: some View {
         NavigationView {
             List(searchResults, id: \.self) { contact in
