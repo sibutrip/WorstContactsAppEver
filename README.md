@@ -18,3 +18,4 @@ You are a junior developer working on an app to store a user's contacts. Unfortu
 * Color and Effects: https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/#color-and-effects
 * Motion: https://developer.apple.com/design/human-interface-guidelines/foundations/motion
 * Icons: https://developer.apple.com/design/human-interface-guidelines/foundations/icons
+* Localization: https://developer.apple.com/documentation/xcode/adding-support-for-languages-and-regions
