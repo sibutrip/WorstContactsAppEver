@@ -26,24 +26,29 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(searchResults, id: \.self) { contact in
-                Button {
-                    self.selectedContact = contact
-                    isShowingContactCard = true
-                } label: {
-                    HStack(spacing: 5) {
-                        Text(contact.firstName)
-                            .font(.system(size: 18, weight: .bold, design: .default))
-                        Text(contact.lastName)
-                            .font(.system(size: 18, weight: .regular, design: .default))
-                    }
-                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                        Button(role: .destructive) {
-                            contacts.removeAll {
-                                $0 == contact
-                            }
-                        } label: {
-                            Image(systemName: "trash")
+                HStack {
+                    Button {
+                        self.selectedContact = contact
+                        isShowingContactCard = true
+                    } label: {
+                        HStack(spacing: 5) {
+                            Text(contact.firstName)
+                                .font(.system(size: 18, weight: .bold, design: .default))
+                            Text(contact.lastName)
+                                .font(.system(size: 18, weight: .regular, design: .default))
                         }
+                    }
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                }
+                .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                    Button(role: .destructive) {
+                        contacts.removeAll {
+                            $0 == contact
+                        }
+                    } label: {
+                        Image(systemName: "trash")
+                        
                     }
                 }
                 .listRowBackground(Color.clear)
@@ -60,6 +65,7 @@ struct ContentView: View {
             .background {
                 LinearGradient(colors: [.blue,.indigo], startPoint: .bottomLeading, endPoint: .topTrailing)
                     .ignoresSafeArea()
+                
             }
         }
     }
