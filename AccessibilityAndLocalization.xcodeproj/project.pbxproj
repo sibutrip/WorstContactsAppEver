@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B08BE4E29B67533007C5DCD /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B08BE4D29B67533007C5DCD /* ContactRowView.swift */; };
 		748DEE2F298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */; };
 		748DEE33298C3EE6009E42FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748DEE32298C3EE6009E42FF /* Assets.xcassets */; };
 		748DEE36298C3EE6009E42FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748DEE35298C3EE6009E42FF /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B08BE4D29B67533007C5DCD /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 		748DEE2B298C3EE5009E42FF /* AccessibilityAndLocalization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityAndLocalization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityAndLocalizationApp.swift; sourceTree = "<group>"; };
 		748DEE32298C3EE6009E42FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				74C8501429941EB50014893F /* Contact.swift */,
 				74ACBC792992FEB700301804 /* ContactCardView.swift */,
 				74C850242995596C0014893F /* ContentView.swift */,
+				5B08BE4D29B67533007C5DCD /* ContactRowView.swift */,
 				748DEE32298C3EE6009E42FF /* Assets.xcassets */,
 				748DEE34298C3EE6009E42FF /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 				74ACBC7A2992FEB700301804 /* ContactCardView.swift in Sources */,
 				748DEE2F298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift in Sources */,
 				74C850252995596C0014893F /* ContentView.swift in Sources */,
+				5B08BE4E29B67533007C5DCD /* ContactRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
