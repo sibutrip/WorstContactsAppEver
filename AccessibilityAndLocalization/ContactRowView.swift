@@ -20,13 +20,13 @@ struct ContactRowView: View {
                         .fixedSize(horizontal: true, vertical: false)
                 }
                 Spacer()
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
             }
         } else {
             HStack{
                 shared
                 Spacer()
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
             }
         }
     }
