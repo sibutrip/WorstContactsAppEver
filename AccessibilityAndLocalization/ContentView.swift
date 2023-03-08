@@ -66,9 +66,8 @@ struct ContentView: View {
             .toolbarBackground(Material.ultraThin, for: .tabBar)
             .searchable(text: $searchText)
             .background {
-                LinearGradient(colors: [.blue,.indigo], startPoint: .bottomLeading, endPoint: .topTrailing)
+                Color.BackgroundBlue
                     .ignoresSafeArea()
-                
             }
         }
     }

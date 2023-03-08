@@ -64,7 +64,7 @@ struct ContactCardView: View {
             .animation(.interpolatingSpring(mass: 5, stiffness: 200, damping: 75, initialVelocity: 23), value: zoomScale)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
-                LinearGradient(colors: [.indigo,.purple], startPoint: .bottomLeading, endPoint: .topTrailing)
+                Color.BackgroundBlue
                     .ignoresSafeArea()
             }
         }
