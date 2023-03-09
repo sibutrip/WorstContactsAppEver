@@ -11,7 +11,6 @@ struct ContentView: View {
     @State var contacts = Contact.contacts.sorted()
     @State var isShowingContactCard = false
     @State var selectedContact: Contact = Contact.contacts[0]
-    
     @State var searchText = String()
     var searchResults: [Contact] {
         if searchText.isEmpty {
@@ -73,5 +72,22 @@ struct ContentView: View {
 struct ContactsViewList_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDisplayName("Light Mode")
+        ContentView()
+            .preferredColorScheme(.dark)
+            .previewDisplayName("Dark Mode")
+        ContentView()
+            .environment(\._colorSchemeContrast, .increased)
+            .previewDisplayName("Light Mode High Contrast")
+        ContentView()
+            .preferredColorScheme(.dark)
+            .environment(\._colorSchemeContrast, .increased)
+            .previewDisplayName("Dark Mode High Contrast")
+        ContentView()
+            .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
+            .previewDisplayName("Dynamic Type: Font Size Extra Extra Extra Large")
+        ContentView()
+            .environment(\._accessibilityReduceMotion, true)
+            .previewDisplayName("Reduce Motion")
     }
 }
