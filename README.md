@@ -7,8 +7,7 @@ You are a junior developer working on an app to store a user's contacts. Unfortu
 * I can implement Accessibility features
 * I can use the accessibility inspector in xcode
 * I can structure an app localization using xcode
-* I can understand and completing user stories
-* I can track progress using a backlog and board
+* I can understand and complete user stories
 
 ## User Stories (Tasks)
 Implement these user stories, starting with the ones that are highest priority for your app.
@@ -25,7 +24,7 @@ Implement these user stories, starting with the ones that are highest priority f
 
 > [!NOTE]
 > Acceptance Criteria
-> * ContactCardView animation is less intense when Reduce Motion is enabled.
+> * Profile picture in ContactCardView scales to user's preferred text size.
 
 > [!TIP]
 > Declare a property in your ContentView with the ScaledMetric property wrapper:
