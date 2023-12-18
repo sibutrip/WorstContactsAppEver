@@ -7,26 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DD973A82B3080C300ABAD76 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5DD973A72B3080C300ABAD76 /* README.md */; };
-		748DEE2F298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */; };
-		748DEE33298C3EE6009E42FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748DEE32298C3EE6009E42FF /* Assets.xcassets */; };
-		748DEE36298C3EE6009E42FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748DEE35298C3EE6009E42FF /* Preview Assets.xcassets */; };
-		74ACBC7A2992FEB700301804 /* ContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACBC792992FEB700301804 /* ContactCardView.swift */; };
-		74C8501529941EB50014893F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8501429941EB50014893F /* Contact.swift */; };
-		74C850252995596C0014893F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C850242995596C0014893F /* ContentView.swift */; };
-		74E04ADA29B8C9C10010A33B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E04AD929B8C9C10010A33B /* Color+Extension.swift */; };
+		744515292B30813D0091C4E8 /* WorstContactsAppEverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744515212B30813D0091C4E8 /* WorstContactsAppEverApp.swift */; };
+		7445152A2B30813D0091C4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744515222B30813D0091C4E8 /* Assets.xcassets */; };
+		7445152B2B30813D0091C4E8 /* ContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744515232B30813D0091C4E8 /* ContactCardView.swift */; };
+		7445152C2B30813D0091C4E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744515252B30813D0091C4E8 /* Preview Assets.xcassets */; };
+		7445152D2B30813D0091C4E8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744515262B30813D0091C4E8 /* Color+Extension.swift */; };
+		7445152E2B30813D0091C4E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744515272B30813D0091C4E8 /* ContentView.swift */; };
+		7445152F2B30813D0091C4E8 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744515282B30813D0091C4E8 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5DD973A72B3080C300ABAD76 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		748DEE2B298C3EE5009E42FF /* AccessibilityAndLocalization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityAndLocalization.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityAndLocalizationApp.swift; sourceTree = "<group>"; };
-		748DEE32298C3EE6009E42FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		748DEE35298C3EE6009E42FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		74ACBC792992FEB700301804 /* ContactCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardView.swift; sourceTree = "<group>"; };
-		74C8501429941EB50014893F /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		74C850242995596C0014893F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		74E04AD929B8C9C10010A33B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		744515212B30813D0091C4E8 /* WorstContactsAppEverApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorstContactsAppEverApp.swift; sourceTree = "<group>"; };
+		744515222B30813D0091C4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		744515232B30813D0091C4E8 /* ContactCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCardView.swift; sourceTree = "<group>"; };
+		744515252B30813D0091C4E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		744515262B30813D0091C4E8 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		744515272B30813D0091C4E8 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		744515282B30813D0091C4E8 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		744515302B3081440091C4E8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		748DEE2B298C3EE5009E42FF /* WorstContactsAppEver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorstContactsAppEver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,11 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		744515202B30813D0091C4E8 /* WorstContactsAppEver */ = {
+			isa = PBXGroup;
+			children = (
+				744515212B30813D0091C4E8 /* WorstContactsAppEverApp.swift */,
+				744515272B30813D0091C4E8 /* ContentView.swift */,
+				744515232B30813D0091C4E8 /* ContactCardView.swift */,
+				744515282B30813D0091C4E8 /* Contact.swift */,
+				744515262B30813D0091C4E8 /* Color+Extension.swift */,
+				744515222B30813D0091C4E8 /* Assets.xcassets */,
+				744515242B30813D0091C4E8 /* Preview Content */,
+			);
+			path = WorstContactsAppEver;
+			sourceTree = "<group>";
+		};
+		744515242B30813D0091C4E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				744515252B30813D0091C4E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		748DEE22298C3EE5009E42FF = {
 			isa = PBXGroup;
 			children = (
-				5DD973A72B3080C300ABAD76 /* README.md */,
-				748DEE2D298C3EE5009E42FF /* AccessibilityAndLocalization */,
+				744515302B3081440091C4E8 /* README.md */,
+				744515202B30813D0091C4E8 /* WorstContactsAppEver */,
 				748DEE2C298C3EE5009E42FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,39 +73,17 @@
 		748DEE2C298C3EE5009E42FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				748DEE2B298C3EE5009E42FF /* AccessibilityAndLocalization.app */,
+				748DEE2B298C3EE5009E42FF /* WorstContactsAppEver.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		748DEE2D298C3EE5009E42FF /* AccessibilityAndLocalization */ = {
-			isa = PBXGroup;
-			children = (
-				748DEE2E298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift */,
-				74C8501429941EB50014893F /* Contact.swift */,
-				74ACBC792992FEB700301804 /* ContactCardView.swift */,
-				74C850242995596C0014893F /* ContentView.swift */,
-				748DEE32298C3EE6009E42FF /* Assets.xcassets */,
-				74E04AD929B8C9C10010A33B /* Color+Extension.swift */,
-				748DEE34298C3EE6009E42FF /* Preview Content */,
-			);
-			path = AccessibilityAndLocalization;
-			sourceTree = "<group>";
-		};
-		748DEE34298C3EE6009E42FF /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				748DEE35298C3EE6009E42FF /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		748DEE2A298C3EE5009E42FF /* AccessibilityAndLocalization */ = {
+		748DEE2A298C3EE5009E42FF /* WorstContactsAppEver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 748DEE39298C3EE6009E42FF /* Build configuration list for PBXNativeTarget "AccessibilityAndLocalization" */;
+			buildConfigurationList = 748DEE39298C3EE6009E42FF /* Build configuration list for PBXNativeTarget "WorstContactsAppEver" */;
 			buildPhases = (
 				748DEE27298C3EE5009E42FF /* Sources */,
 				748DEE28298C3EE5009E42FF /* Frameworks */,
@@ -94,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = AccessibilityAndLocalization;
+			name = WorstContactsAppEver;
 			productName = AccessibilityAndLocalization;
-			productReference = 748DEE2B298C3EE5009E42FF /* AccessibilityAndLocalization.app */;
+			productReference = 748DEE2B298C3EE5009E42FF /* WorstContactsAppEver.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 748DEE26298C3EE5009E42FF /* Build configuration list for PBXProject "AccessibilityAndLocalization" */;
+			buildConfigurationList = 748DEE26298C3EE5009E42FF /* Build configuration list for PBXProject "WorstContactsAppEver" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				748DEE2A298C3EE5009E42FF /* AccessibilityAndLocalization */,
+				748DEE2A298C3EE5009E42FF /* WorstContactsAppEver */,
 			);
 		};
 /* End PBXProject section */
@@ -137,9 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DD973A82B3080C300ABAD76 /* README.md in Resources */,
-				748DEE36298C3EE6009E42FF /* Preview Assets.xcassets in Resources */,
-				748DEE33298C3EE6009E42FF /* Assets.xcassets in Resources */,
+				7445152C2B30813D0091C4E8 /* Preview Assets.xcassets in Resources */,
+				7445152A2B30813D0091C4E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,11 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C8501529941EB50014893F /* Contact.swift in Sources */,
-				74E04ADA29B8C9C10010A33B /* Color+Extension.swift in Sources */,
-				74ACBC7A2992FEB700301804 /* ContactCardView.swift in Sources */,
-				748DEE2F298C3EE5009E42FF /* AccessibilityAndLocalizationApp.swift in Sources */,
-				74C850252995596C0014893F /* ContentView.swift in Sources */,
+				744515292B30813D0091C4E8 /* WorstContactsAppEverApp.swift in Sources */,
+				7445152D2B30813D0091C4E8 /* Color+Extension.swift in Sources */,
+				7445152F2B30813D0091C4E8 /* Contact.swift in Sources */,
+				7445152E2B30813D0091C4E8 /* ContentView.swift in Sources */,
+				7445152B2B30813D0091C4E8 /* ContactCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AccessibilityAndLocalization/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WorstContactsAppEver/Preview Content\"";
 				DEVELOPMENT_TEAM = 3UR85MK9RT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -297,7 +295,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoryTripathy.AccessibilityAndLocalization;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoryTripathy.WorstContactsAppEver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,7 +310,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AccessibilityAndLocalization/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WorstContactsAppEver/Preview Content\"";
 				DEVELOPMENT_TEAM = 3UR85MK9RT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -327,7 +325,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoryTripathy.AccessibilityAndLocalization;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoryTripathy.WorstContactsAppEver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -338,7 +336,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		748DEE26298C3EE5009E42FF /* Build configuration list for PBXProject "AccessibilityAndLocalization" */ = {
+		748DEE26298C3EE5009E42FF /* Build configuration list for PBXProject "WorstContactsAppEver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				748DEE37298C3EE6009E42FF /* Debug */,
@@ -347,7 +345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		748DEE39298C3EE6009E42FF /* Build configuration list for PBXNativeTarget "AccessibilityAndLocalization" */ = {
+		748DEE39298C3EE6009E42FF /* Build configuration list for PBXNativeTarget "WorstContactsAppEver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				748DEE3A298C3EE6009E42FF /* Debug */,
