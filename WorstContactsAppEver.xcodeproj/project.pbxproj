@@ -43,12 +43,12 @@
 			isa = PBXGroup;
 			children = (
 				744515212B30813D0091C4E8 /* WorstContactsAppEverApp.swift */,
-				744515222B30813D0091C4E8 /* Assets.xcassets */,
-				744515232B30813D0091C4E8 /* ContactCardView.swift */,
-				744515242B30813D0091C4E8 /* Preview Content */,
-				744515262B30813D0091C4E8 /* Color+Extension.swift */,
 				744515272B30813D0091C4E8 /* ContentView.swift */,
+				744515232B30813D0091C4E8 /* ContactCardView.swift */,
 				744515282B30813D0091C4E8 /* Contact.swift */,
+				744515262B30813D0091C4E8 /* Color+Extension.swift */,
+				744515222B30813D0091C4E8 /* Assets.xcassets */,
+				744515242B30813D0091C4E8 /* Preview Content */,
 			);
 			path = WorstContactsAppEver;
 			sourceTree = "<group>";
