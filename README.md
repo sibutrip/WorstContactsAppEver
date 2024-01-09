@@ -1,4 +1,4 @@
-# Worst Contacts App Ever
+# Worst Contacts App Ever 
 
 ## Activity Description
 You are a junior developer working on an app to store a user's contacts. Unfortunately, the developer before you was not very intentional about designing with accessibility. Without changing the functionality of the app, implement the given user stories.
